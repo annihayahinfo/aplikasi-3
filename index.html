@@ -1636,30 +1636,26 @@
                                                 </div>
 
                                                 {/* Tanda Tangan */}
-                                                <div className="grid grid-cols-3 gap-4 text-center text-xs mt-12 font-semibold">
-                                                    <div>
+                                               <table style="width: 100%;border-collapse; font-family: Arial, sans-serif;">
+                                                   <tr>
+                                                       <td style="width: 50%; vertical-align: top; tx-align: left;">
                                                         <p>Mengetahui,</p>
                                                         <p className="mb-16">Orang Tua / Wali Siswa</p>
-                                                        <p className="border-b border-slate-800 w-32 mx-auto"></p>
-                                                    </div>
-                                                    <div>
-                                                        <p></p>
-                                                        <p></p>
-                                                        <p></p>
+                                                        <p className="border-b border-slate-800 w-32 mx-auto"></p>    
+                                                       </td>
+                                                      <td style="width: 50%; vertical-align: top; tx-align: left;">
                                                         <p>Mengesahkan,</p>
                                                         <p className="mb-16">Kepala Sekolah SDIT ANNIHAYAH</p>
                                                         <p className="font-bold underline">{settings.headmasterName}</p>
-                                                    </div>
-                                                    <div>
+                                                      </td>
+                                                     <td style="width: 50%; vertical-align: top; tx-align: left;">
                                                         <p>Karawang, {settings.reportPrintDate}</p>
                                                         <p className="mb-16">Wali Kelas {student.currentClass}</p>
                                                         <p className="font-bold">{waliKelas}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        );
-                                    })() : (
-                                        <div className="text-center p-12 bg-white rounded-xl border border-dashed text-slate-400">
+                                                     </td>
+                                                   </tr>
+                                               </table>
+                                           <div className="text-center p-12 bg-white rounded-xl border border-dashed text-slate-400">
                                             Pilih siswa di atas untuk merender rapor siap cetak PDF.
                                         </div>
                                     )}
